@@ -1,0 +1,15 @@
+.book_list {
+  list-style: none;
+  padding-inline-start: 0px;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .book_list {
+    width: 75%;
+  }
+}

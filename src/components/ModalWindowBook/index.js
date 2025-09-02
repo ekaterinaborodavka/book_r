@@ -1,0 +1,1 @@
+export { ModalWindowBook } from './ModalWindowBook';

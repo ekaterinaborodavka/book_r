@@ -1,0 +1,15 @@
+.total_info {
+    display: flex;
+    width: 50%;
+    margin: 15px auto;
+    justify-content: space-between;
+    font-size: 18px;
+    padding: 20px;
+}
+.total_book {
+    color: gray;
+}
+.total_lent {
+    color: #4e9c50;
+    font-weight: 700;
+}
