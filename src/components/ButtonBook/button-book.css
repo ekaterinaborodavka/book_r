@@ -6,6 +6,10 @@
     background: white;
 }
 
+.dark-theme .footer {
+  background: rgb(39, 37, 37);
+}
+
 .add_book {
     position: relative;
     margin: 0 auto;

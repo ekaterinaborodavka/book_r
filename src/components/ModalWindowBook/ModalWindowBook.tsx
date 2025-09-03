@@ -6,6 +6,7 @@ import {
   useState,
 } from "react";
 import { shallowEqual } from "react-redux";
+import { OctagonAlert } from "lucide-react";
 import { useAppDispatch, useAppSelector } from "../../store/hooks";
 
 import "./modal-window-book.css";
@@ -130,6 +131,7 @@ export const ModalWindowBook = ({ isOpen, onClose }: Props) => {
             placeholder={"Until"}
             type="date"
             onChange={onInputChange}
+            min={new Date().toISOString().split("T")[0]}
           />
           {edit ? (
             <div className="checkbox">
@@ -145,7 +147,11 @@ export const ModalWindowBook = ({ isOpen, onClose }: Props) => {
               </label>
             </div>
           ) : null}
-          {error && <p className="error">⚠️ All fields must be filled in</p>}
+          {error && (
+            <p className="error">
+              <OctagonAlert /> All fields must be filled in
+            </p>
+          )}
           <div className="buttons">
             <button type="button" className="cancel" onClick={onCloseModal}>
               Cancel

@@ -1,6 +1,12 @@
 .book_item {
   display: flex;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
+
+.dark-theme .book_item {
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.15);
+}
+
 .book_name,
 .book_friend {
   color: #4e9c50;
@@ -8,18 +14,22 @@
   font-weight: 700;
   margin-bottom: 20px;
 }
+
 .book_until,
 .book_author {
   color: gray;
   font-size: 16px;
 }
+
 .book_author {
   font-weight: 700;
 }
+
 .book_info_wrapper {
   display: flex;
   flex: 90;
 }
+
 .number {
   background: #4e9c50;
   color: white;
@@ -28,10 +38,12 @@
   align-items: center;
   flex: 5;
 }
+
 .book_title {
   flex: 55;
   padding: 40px 30px;
   background: white;
+
 }
 .book_info {
   flex: 35;
@@ -39,12 +51,27 @@
   padding: 40px 30px;
   text-align: center;
 }
+
 .book_button_wrapper {
   flex: 5;
   display: flex;
   justify-content: center;
   background: #e8e4e4;
   padding-top: 10px;
+}
+
+.dark-theme .book_button_wrapper {
+  color: rgb(39, 37, 37);
+}
+
+.dark-theme .book_title {
+  background: rgb(39, 37, 37);
+  border-top: 1px solid #e8e4e4;
+  border-bottom: 1px solid #e8e4e4;
+}
+
+.dark-theme .number {
+  color: rgb(39, 37, 37);
 }
 
 @media (max-width: 768px) {

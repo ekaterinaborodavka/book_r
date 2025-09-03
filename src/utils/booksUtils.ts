@@ -42,10 +42,6 @@ export const changeBook = (
   );
 };
 
-// export const modalValue = (books: Book[], id: string): Book[] => {
-//   return books.filter(el => el.id === id);
-// };
-
 export const modalValue = (books: Book[], id: string): Book | null => {
   return books.find(el => el.id === id) ?? null;
 };
