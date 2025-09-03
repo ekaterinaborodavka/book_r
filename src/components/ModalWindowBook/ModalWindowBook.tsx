@@ -16,6 +16,7 @@ import {
   changeItem,
   deleteItem,
   showModalFilter,
+  changeEdit
 } from "../../store/bookSlice";
 import { updateForm } from "../../store/formSlice";
 
@@ -53,6 +54,7 @@ export const ModalWindowBook = ({ isOpen, onClose }: Props) => {
   }, [edit, changeEl, dispatch]);
 
   const onCloseModal = () => {
+    dispatch(changeEdit(false)); 
     onClose();
     setError(false);
   };
